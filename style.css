@@ -1,0 +1,129 @@
+:root {
+    --pink: #ff4fa3;
+    --purple: #7027a0;
+    --dark: #130d22;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(135deg, rgba(19, 13, 34, .82), rgba(112, 39, 160, .7)),
+        url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2000&q=80")
+        center / cover fixed;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(19, 13, 34, .7);
+}
+
+.logo {
+    color: var(--pink);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(3rem, 10vw, 7rem);
+    text-shadow: 4px 4px var(--pink);
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    margin: 20px 0 45px;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.time-box,
+.info-card {
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 16px;
+    background: rgba(19, 13, 34, .75);
+    backdrop-filter: blur(8px);
+}
+
+.time-box strong {
+    display: block;
+    color: var(--pink);
+    font-size: 2.5rem;
+}
+
+.time-box span {
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.info-card h2 {
+    color: var(--pink);
+    margin-top: 0;
+}
+
+footer {
+    padding: 30px;
+    color: #ddd;
+    text-align: center;
+    font-size: .9rem;
+}
+
+@media (max-width: 700px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .countdown,
+    .info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
