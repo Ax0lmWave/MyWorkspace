@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: #120b1d;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo, .eyebrow {
+  color: #ff4fa3;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  margin: 100px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+.subtitle {
+  color: #ddd;
+}
+
+button {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 20px;
+  background: #ff4fa3;
+  color: white;
+  cursor: pointer;
+}
+
+.info {
+  text-align: center;
+}
