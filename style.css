@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #120b1d;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  background-color: rgba(69, 19, 154, 0.326);
+  box-shadow: 5px 5px 25px rgba(69, 19, 154, 0.3);
+  position: sticky;
+}
+
+.header-logo img{
+  height: 50px; 
+}
+
+.eyebrow {
+  color: #ff4fa3;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5%;
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 5px 5px 15px rgba(211, 12, 191, 0.3);
+    background-color: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(234, 68, 217, 0.46);
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hero-main {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .eyebrow {
+    text-shadow: 5px 5px 15px rgba(211, 12, 191, 0.3);
+  }
+}
+
+h1 {
+  font-size: 56px;
+}
+
+.subtitle {
+  color: #ddd;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  max-width: 500px;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+button {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(234, 68, 217, 0.46);
+  color: white;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.info {
+  text-align: center;
+}
